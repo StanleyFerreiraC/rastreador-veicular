@@ -1,0 +1,108 @@
+.vehicle-map {
+  margin-block-start: 2.25rem;
+}
+
+.vehicle-map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 .75rem;
+  margin-block-end: .5rem;
+}
+
+.vehicle-map-header h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  min-height: 2.75rem;
+  color: var(--accent);
+  font-size: .9375rem;
+  font-weight: 650;
+  text-underline-offset: .18em;
+}
+
+.map-link:hover { color: #2b1c74; }
+
+.vehicle-map-panel {
+  border: 1px solid var(--line);
+  border-radius: .875rem;
+  background: var(--surface);
+}
+
+.vehicle-map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem .75rem;
+  padding: .6rem .85rem;
+  border-block-end: 1px solid var(--line);
+}
+
+.map-targets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+}
+
+.map-targets button, .map-point-label {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  min-height: 2.75rem;
+  padding: .35rem .65rem;
+  color: var(--muted);
+  font-size: .875rem;
+  font-weight: 650;
+}
+
+.map-targets button {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.map-targets button:hover { color: var(--accent); }
+
+.map-targets button[aria-pressed='true'] {
+  background: var(--accent-soft);
+  border-color: #d8d0f2;
+  color: var(--accent);
+}
+
+.map-place-name {
+  padding-inline: .4rem;
+  color: var(--muted);
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.vehicle-map-frame {
+  display: block;
+  width: 100%;
+  height: clamp(17.5rem, 40vw, 25rem);
+  border: 0;
+  border-radius: 0 0 .875rem .875rem;
+  background: #f1eff5;
+}
+
+.vehicle-map-empty {
+  display: grid;
+  min-height: 10rem;
+  place-content: center;
+  justify-items: center;
+  gap: .6rem;
+  padding: 1rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.vehicle-map-empty svg { color: var(--accent); }
